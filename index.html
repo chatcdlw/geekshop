@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekWorld - Carrito</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #404040;
+        }
+        .header {
+            background-color: #00AEEF;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .header img {
+            vertical-align: middle;
+            height: 50px;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .nav {
+            background-color: #404040;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Lato', sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .coupon {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .coupon input[type="text"] {
+            padding: 10px;
+            flex: 1;
+            border: 1px solid #ddd;
+        }
+        .coupon button {
+            padding: 10px 20px;
+            background-color: #00AEEF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .totals {
+            text-align: right;
+            margin-top: 20px;
+        }
+        .totals h3 {
+            margin: 10px 0;
+        }
+        .checkout-btn {
+            background-color: #FFA500;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logogeek.png" alt="GeekWorld Logo">
+        <h1>Bienvenido Geek <3</h1>
+    </header>
+    <nav class="nav">
+        <a href="catalogo.html">Inicio</a>
+        <a href="index.html">Carrito</a>
+      
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    <div class="container">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+        
+                    <td><img src="ram.jpg" width="100" right><p></p> RAM DDR4 16GB 3600MHz Adata XPG SPECTRIX D45G 1x16GB / RGB / Negra / AX4U360016G18I-CBKD45G</td>
+                    <td>$1,099.00</td>
+                    <td><input type="number" value="1" min="1"></td>
+                    <td>$1,099.00</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="coupon">
+            <input type="text" placeholder="Código de cupón">
+            <button>Aplicar cupón</button>
+        </div>
+        <div class="totals">
+            <h3>Subtotal: $1,099.00</h3>
+            <h3>Total: $1,099.00</h3>
+            <button class="checkout-btn">Finalizar compra</button>
+        </div>
+    </div>
+</body>
+</html>

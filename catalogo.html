@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeekWorld - Catálogo de Productos</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #404040;
+        }
+        .header {
+            background-color: #00AEEF;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .header img {
+            vertical-align: middle;
+            height: 50px;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .nav {
+            background-color: #404040;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-family: 'Lato', sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+            text-align: center;
+        }
+        .product-card {
+            display: inline-block;
+            width: 22%;
+            margin: 1%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            vertical-align: top;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 1.2em;
+            color: #00AEEF;
+            margin: 10px 0;
+        }
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #00AEEF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logogeek.png" alt="GeekWorld Logo">
+        <h1>Bienvenido Geek <3</h1>
+    </header>
+    <nav class="nav">
+        <a href="catalogo.html">Inicio</a>
+        <a href="index.html">Carrito</a>
+    
+        <a href="checkout.html">Checkout</a>
+    </nav>
+    <div class="container">
+        <h2>Catálogo de Productos</h2>
+        <div class="product-card">
+            <img src="ram.jpg" alt="Memoria RAM">
+            <h3><a href="descripcion.html">Memoria RAM DDR4 16GB 3600MHz Adata XPG SPECTRIX D45G</a></h3>
+            <p>$1,099.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="ssds.jpeg" alt="SSD">
+            <a href="ssd.html">
+            <h3>SSD 1TB Samsung 970 EVO Plus NVMe</h3></a>
+            <p>$2,299.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="3080.jpeg" alt="Tarjeta Gráfica">
+           <a href="3080.html"> <h3>Tarjeta Gráfica NVIDIA GeForce RTX 3080</h3></a>
+            <p>$14,999.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product-card">
+            <img src="ryzen.jpeg" alt="Procesador">
+            <a href="ryzen.html"><h3>Procesador AMD Ryzen 9 5900X</h3></a>
+            <p>$9,499.00</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </div>
+</body>
+</html>
